@@ -2,10 +2,10 @@ const manager = require('./lib/Manager');
 const engineer = require('./lib/Engineer');
 const intern = require('./lib/Intern');
 
-const generate = require('./src/generate');
 
 const inquirer = require('inquirer');
 const fs = require('fs');
+const createCards = require('./src/createCards');
 
 const team = [];
 
@@ -141,7 +141,15 @@ function addIntern(){
 };
 
 function draftFile(){
+    console.log(team);
+    console.log(createCards(team));
+    
 
+    // fs.writeFile('./dist/index.html', data, (err) => {
+    //     if (err) throw err;
+    //     console.log('The file has been saved!');
+    //  })
+    
 };
 
 addManager()
