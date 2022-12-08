@@ -19,5 +19,4 @@ SO THAT I have quick access to their emails and GitHub profiles
 
 ## View
 View walkthrough video here: 
-
-Image of resulting application below
+https://watch.screencastify.com/v/4jmZ7Yv1x2Z2oM2BnQtf
