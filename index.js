@@ -65,7 +65,7 @@ inquirer
         addIntern();
     }
     else{
-        draftFile();
+        draftFile(team);
     }
   });
 };
@@ -140,16 +140,12 @@ function addIntern(){
     });
 };
 
-function draftFile(){
-    console.log(team);
-    console.log(createCards(team));
-    
+function draftFile(team){
 
-    // fs.writeFile('./dist/index.html', data, (err) => {
-    //     if (err) throw err;
-    //     console.log('The file has been saved!');
-    //  })
-    
+    fs.writeFile('./dist/index.html', createCards(team), (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+     })
 };
 
 addManager()

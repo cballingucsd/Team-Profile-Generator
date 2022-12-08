@@ -55,8 +55,8 @@ function createCards(data){
                 cardArray.push(internCard);
             }
     }    
-   console.log("******"+cardArray);
-   createTeam(cardArray);
+    
+   return createTeam(cardArray);
 }
 
 function createTeam(cardArray){
